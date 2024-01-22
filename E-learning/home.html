@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">E-LEARNING</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Learning-Sites</a>
+                </li>
+
+                <li>
+                    <a href="#">Team</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video (2160p).mp4"  type="video/mp4">
+        </video>
+        <div class="main-display">
+            <h3>Learn, Code, Develop</h3>
+            <div class="container-home-text">
+                <div class="home-text">
+                    <p class="">Discover the ideal learning path for mastering front-end or back-end programming languages! Our website is your guide to finding the best online resources tailored to your journey in web development. Whether you're diving into the creative world of front-end design or delving into the logic-driven back-end, We help you navigate through top-notch learning platforms to elevate your programming skills. Your success in web development starts here!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+
+        hamburger.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
